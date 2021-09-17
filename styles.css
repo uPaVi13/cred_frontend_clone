@@ -41,8 +41,11 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 50px;
-  min-width: 900px;
   margin-bottom: 150px;
+}
+
+#header {
+  margin-bottom: 10px;
 }
 
 h1,
@@ -53,7 +56,7 @@ h3 {
 
 h1,
 h2 {
-  font-size: 96px;
+  font-size: 84px;
   align-self: center;
   margin: 0;
 }
@@ -173,7 +176,6 @@ section .button {
   display: flex;
   flex-direction: column;
   font-size: 20px;
-  width: 500px;
 }
 
 .left p {
@@ -201,4 +203,64 @@ img.security {
 
 .copyrights p {
   opacity: 0.4;
+}
+
+@media screen and (max-width: 991px) {
+  #menu {
+    font-size: 14px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-left: 150px;
+  }
+
+  h1,
+  h2 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 30px;
+    padding-right: 20px;
+    min-width: 40%;
+  }
+
+  #about {
+    padding: auto 20px auto 50px;
+  }
+
+  #about p {
+    min-width: 40%;
+    font-size: 14px;
+  }
+
+  .left {
+    max-width: 60%;
+    font-size: 14px;
+  }
+
+  .copyrights {
+    font-size: 12px;
+  }
+
+  .right {
+    padding-left: -10px;
+  }
+
+  .headline p,
+  .button,
+  .head p {
+    font-size: 18px;
+  }
+
+  .context p {
+    font-size: 14px;
+  }
+
+  section {
+    padding: 150px 30px 150px 30px;
+  }
+
+  section p {
+    max-width: 520px;
+  }
 }
